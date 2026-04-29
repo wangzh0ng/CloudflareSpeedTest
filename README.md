@@ -45,11 +45,13 @@ scoop install dorado/cloudflare-speedtest
 </details>
 
 <details>
-<summary><code><strong>「 点击查看 Linux 系统下的使用示例 」</strong></code></summary>
+<summary><code><strong>「 点击查看 Linux / MAC 系统下的使用示例 」</strong></code></summary>
 
 ****
 
 以下命令仅为示例，版本号和文件名请前往 [**Releases**](https://github.com/XIU2/CloudflareSpeedTest/releases) 查看。
+
+> MAC 下 CFST 的安装和使用方式是一样的，不过 MAC 可以通过其他方式来下载解压（也就是可以跳过下面的前几个步骤），但运行的话还是需要在终端中运行（注意别忘了 **赋予执行权限**）。
 
 ``` yaml
 # 如果是第一次使用，则建议创建新文件夹（后续更新时，跳过该步骤）
@@ -67,6 +69,7 @@ wget -N https://github.com/XIU2/CloudflareSpeedTest/releases/latest/download/cfs
 # wget -N https://gh-proxy.org/https://github.com/XIU2/CloudflareSpeedTest/releases/latest/download/cfst_linux_amd64.tar.gz
 # wget -N https://cdn.gh-proxy.org/https://github.com/XIU2/CloudflareSpeedTest/releases/latest/download/cfst_linux_amd64.tar.gz
 # 如果下载失败的话，尝试删除 -N 参数（如果是为了更新，则记得提前删除旧压缩包 rm cfst_linux_amd64.tar.gz ）
+# 如果要下载特定版本的，可以改用这种，例如：wget -N https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.3.4/cfst_linux_amd64.tar.gz
 
 # 解压（不需要删除旧文件，会直接覆盖，自行根据需求替换 文件名）
 tar -zxf cfst_linux_amd64.tar.gz
